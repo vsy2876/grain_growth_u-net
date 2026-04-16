@@ -1,0 +1,36 @@
+# --- Data and Simulation Outputs ---
+dataset/
+runs/
+grain_images/
+grain_distributions/
+*.dump
+*.tar.gz
+*.npy
+
+# --- Model Weights (GitHub 100MB limit) ---
+*.pt
+*.ckpt
+checkpoints/
+final_model*/
+
+# --- Cluster Logs & Temp Files ---
+*.out
+*.log
+logs/
+my_structure.txt
+
+# --- Python/IDE/Jupyter Junk ---
+__pycache__/
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.DS_Store
+
+# --- Image Handling ---
+# Ignore all training/result images globally
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# EXCEPTION: Allow curated visualizations in the assets folder
+!assets/*.png
